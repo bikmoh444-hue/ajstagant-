@@ -1,0 +1,1 @@
+export const navigation = [{ label: 'Accueil', href: '/' }, { label: 'Histoire', href: '/histoire' }, { label: 'Équipe', href: '/equipe' }, { label: 'Matchs & Classement', href: '/matchs' }, { label: 'Galerie', href: '/galerie' }, { label: 'Bureau directeur', href: '/bureau' }, { label: 'Contact', href: '/contact' }];

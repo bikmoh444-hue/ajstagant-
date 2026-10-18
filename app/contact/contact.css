@@ -1,0 +1,24 @@
+.contact-page .contact-grid { align-items:start; }
+.contact-page .contact-association-name { font-family:var(--font-arabic); font-size:17px; color:var(--royal); margin-bottom:28px; }
+.contact-page .contact-details>p { font-size:12px; }
+.contact-social-title { font-family:var(--font-title); font-weight:400; font-size:23px; margin:35px 0 18px; }
+.contact-network-list { display:grid; gap:16px; }
+.contact-network-list>div { display:flex; gap:13px; align-items:center; font-size:12px; }
+.contact-network-list svg { color:var(--royal); }
+.contact-network-list small { display:block; font-size:10px; color:var(--text); }
+.contact-network-list a { text-decoration:underline; text-underline-offset:3px; }
+.contact-map-link { margin-top:28px; }
+.dedicated-contact-form h2 { font-family:var(--font-title); font-weight:400; font-size:26px; margin-bottom:8px; }
+.dedicated-contact-form fieldset { border:0; padding:0; margin:0; min-width:0; }
+.dedicated-contact-form label>span { font-weight:400; color:var(--text); }
+.dedicated-contact-form .contact-service-note { font-size:10px; color:var(--text); border-left:3px solid var(--yellow); padding:9px 12px; background:white; margin-bottom:22px; }
+.dedicated-contact-form input[aria-invalid=true],.dedicated-contact-form textarea[aria-invalid=true] { border-color:var(--royal); border-width:2px; }
+.dedicated-contact-form .contact-field-error { color:var(--royal); font-size:10px; margin:-6px 0 14px; font-weight:500; }
+.contact-feedback { display:flex; align-items:flex-start; gap:10px; margin-top:20px; padding:14px; border:1px solid var(--royal); border-radius:var(--radius-sm); color:var(--navy); background:white; font-size:12px; }
+.contact-feedback svg { flex-shrink:0; color:var(--royal); }
+.contact-feedback.success { border-color:var(--yellow); border-left:4px solid var(--yellow); }
+.contact-feedback.error { border-left:4px solid var(--royal); }
+.contact-spinner { animation:contact-spin 1s linear infinite; }
+@keyframes contact-spin { to { transform:rotate(360deg); } }
+@media(prefers-reduced-motion:reduce) { .contact-spinner { animation:none; } }
+@media(max-width:640px) { .contact-page .contact-grid { gap:38px; } .contact-page .contact-association-name { font-size:16px; } }

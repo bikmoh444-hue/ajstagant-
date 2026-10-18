@@ -1,0 +1,47 @@
+{
+  "name": "ajt-tagant",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node scripts/run-next.mjs dev",
+    "build": "next build",
+    "start": "node scripts/run-next.mjs start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test:e2e": "node scripts/check-pages.mjs",
+    "test:domain": "node scripts/check-domain.mjs",
+    "test:contact": "node scripts/check-contact-api.mjs",
+    "db:types": "node scripts/generate-db-contract.mjs",
+    "db:seed-file": "node scripts/generate-seed.mjs",
+    "test:security": "node scripts/check-security.mjs",
+    "test:supabase": "node scripts/check-supabase.mjs",
+    "test:auth": "node scripts/check-auth.mjs",
+    "test:session": "node scripts/check-session.mjs",
+    "test:admin": "node scripts/check-admin.mjs",
+    "diagnose:supabase": "node scripts/diagnose-supabase.mjs",
+    "test:unit": "node scripts/check-unit.mjs",
+    "test:uploads": "node scripts/check-uploads.mjs",
+    "test:history-images": "node scripts/check-history-images.mjs",
+    "test:team-compatibility": "node scripts/check-team-compatibility.mjs",
+    "test:production": "node scripts/check-production.mjs"
+  },
+  "dependencies": {
+    "@supabase/ssr": "0.12.3",
+    "@supabase/supabase-js": "2.118.0",
+    "lucide-react": "^0.468.0",
+    "next": "15.5.28",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "eslint": "^9.0.0",
+    "eslint-config-next": "15.5.28",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.7.0"
+  }
+}

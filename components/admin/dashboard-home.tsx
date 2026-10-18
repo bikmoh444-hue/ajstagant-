@@ -1,0 +1,7 @@
+import Link from 'next/link';
+import { Home, BookOpen, Users, Trophy, Images, ContactRound, Mail, Settings, ArrowUpRight } from 'lucide-react';
+import { adminPages } from '@/lib/admin/pages';
+import { StarterButton } from './starter-button';
+const icons=[Home,BookOpen,Users,Trophy,Images,ContactRound,Mail,Settings];
+const descriptions=['La bannière, les photos, les textes et les sections de votre accueil.','La présentation du club, les souvenirs, la chronologie et les valeurs.','Les joueurs, leurs photos, le staff et les statistiques.','Le calendrier, les résultats, les équipes et le classement.','Vos photos et vos albums, au même endroit.','Les membres du bureau, leurs rôles et leurs portraits.','Les coordonnées, les réseaux sociaux et les messages reçus.','Le logo, l’icône du navigateur, les couleurs et le nom du club.'];
+export function DashboardHome(){return <><div className="admin-welcome"><span>A.J.S TAGANT · ADMINISTRATION</span><h2>Votre site, simplement.</h2><p>Choisissez la page à modifier. Changez vos textes ou vos photos, puis enregistrez.</p></div><div className="admin-page-cards">{Object.entries(adminPages).map(([key,page],index)=>{const Icon=icons[index];return <Link href={`/admin/${key}`} key={key} className="admin-page-card"><span className="admin-card-icon"><Icon size={25}/></span><ArrowUpRight className="admin-card-arrow" size={19}/><h3>{page.title}</h3><p>{descriptions[index]}</p><strong>Modifier cette page →</strong></Link>;})}</div><StarterButton/></>;}

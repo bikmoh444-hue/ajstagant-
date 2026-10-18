@@ -1,0 +1,9 @@
+.team-page .roster-card { border:1px solid #ffffff24; box-shadow:0 12px 28px #101d4012; transition:transform .2s ease,box-shadow .2s ease; }
+.team-page .roster-portrait { background:linear-gradient(145deg,#ffffff18,transparent); }
+.team-page .roster-number { text-shadow:0 2px 14px #0006; }
+.team-page .roster-info h3 { overflow-wrap:anywhere; }
+.team-page .roster-filters { flex-wrap:wrap; gap:8px; }
+.team-page .roster-filters button { min-height:44px; }
+.team-page .roster-filters button:focus-visible { outline:3px solid var(--yellow); outline-offset:3px; }
+@media(hover:hover) { .team-page .roster-card:hover { transform:translateY(-4px); box-shadow:0 18px 35px #101d4024; } }
+@media(prefers-reduced-motion:reduce) { .team-page .roster-card { transition:none; } }
