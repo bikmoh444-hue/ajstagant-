@@ -15,7 +15,8 @@ if (storageUrl) {
 
 // Un serveur dev ouvert ne doit pas écraser les artefacts du build de production.
 const config: NextConfig = {
- distDir:process.env.NODE_ENV==='development'?'.next':'.next-production',
+ // Vercel attend le dossier Next.js standard lors du build et de son exécution.
+ distDir:process.env.VERCEL==='1'||process.env.NODE_ENV==='development'?'.next':'.next-production',
  poweredByHeader:false,
  images:{remotePatterns},
  experimental:{serverActions:{bodySizeLimit:'6mb'}},
