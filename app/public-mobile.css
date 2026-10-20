@@ -16,7 +16,7 @@
  .site-header .menu-toggle{display:grid;place-items:center;min-width:44px;min-height:44px;padding:6px}
  .site-header .languages{display:flex;align-items:center;gap:3px;font-size:10px}
  .site-header .languages button{min-height:44px;padding:0 3px}
- .site-header .navigation{top:100%;inset-inline:0;padding:8px 16px;max-height:calc(100dvh - 64px);overflow-y:auto;box-shadow:0 12px 22px #101a4920}
+ .site-header .navigation{top:100%;inset-inline:0;padding:8px 16px;max-height:calc(100dvh - 64px);overflow-y:auto;box-shadow:0 12px 22px #35450F20}
  .site-header .navigation a{display:flex;align-items:center;min-height:44px;font-size:13px;padding:10px 12px}
  [dir=rtl] .site-header .brand>span:last-child{max-width:132px;font-size:12px;line-height:1.45}
  .section-heading{margin-bottom:22px}
@@ -93,7 +93,7 @@
  .site-footer nav{gap:2px 14px;margin:20px 0}
  .site-footer nav a{display:inline-flex;align-items:center;min-height:44px;font-size:11px}
  .site-footer .socials a{display:inline-flex;align-items:center;min-height:44px}
- :is(.site-header,.site-footer,main) :is(button,a,input,textarea,select):focus-visible{outline:3px solid var(--yellow);outline-offset:3px}
+ :is(.site-header,.site-footer,main) :is(button,a,input,textarea,select):focus-visible{outline:3px solid var(--olive);outline-offset:3px}
 }
 @media(max-width:359px){
  .site-header .brand>span:last-child{font-size:14px}

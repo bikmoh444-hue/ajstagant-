@@ -5,13 +5,13 @@
 .inner-hero h1 { font-family:var(--font-title); font-weight:400; font-size:clamp(36px,4.7vw,64px); line-height:1.2; margin:17px 0 14px; letter-spacing:1px; }
 .inner-hero-subtitle { font-size:15px; }
 .inner-hero-description { font-size:12px; color:#ffffffbd; max-width:610px; margin-top:16px; line-height:1.9; }
-.inner-hero-arabic { font-family:var(--font-arabic); color:var(--yellow); font-size:24px; text-align:left; margin-top:8px; }
+.inner-hero-arabic { font-family:var(--font-arabic); color:white; font-size:24px; text-align:left; margin-top:8px; }
 .inner-section-title { font-family:var(--font-title); font-size:32px; line-height:1.3; font-weight:400; margin-bottom:24px; }
 .empty-state { padding:45px 20px; text-align:center; color:var(--text); }
 .filter-result { color:var(--text); text-align:center; font-size:11px; margin:-12px 0 25px; }
 .section-heading.light h2 { color:white; }
-.history-sports-note { width:250px; padding:26px; border:1px solid #ffffff40; border-left:4px solid var(--yellow); border-radius:var(--radius-sm); flex-shrink:0; }
-.history-sports-note svg { color:var(--yellow); margin-bottom:12px; }
+.history-sports-note { width:250px; padding:26px; border:1px solid #ffffff40; border-left:4px solid var(--olive); border-radius:var(--radius-sm); flex-shrink:0; }
+.history-sports-note svg { color:var(--olive); margin-bottom:12px; }
 .history-sports-note h2 { font-family:var(--font-title); font-size:23px; font-weight:400; }
 .history-sports-note p { font-size:11px; margin-top:10px; color:#ffffffc9; }
 .history-stats-strip { background:var(--navy); color:white; }
@@ -19,7 +19,7 @@
 .page-statistics>div { display:flex; flex-direction:column; align-items:center; padding:0 18px; border-right:1px solid #ffffff26; text-align:center; }
 .page-statistics>div:last-child { border-right:0; }
 .page-statistics dt { order:2; text-transform:uppercase; font-size:9px; letter-spacing:.7px; margin-top:5px; }
-.page-statistics dd { margin:0; color:var(--yellow); font-family:var(--font-title); font-size:25px; font-weight:400; line-height:1.3; }
+.page-statistics dd { margin:0; color:white; font-family:var(--font-title); font-size:25px; font-weight:400; line-height:1.3; }
 .page-statistics small { order:3; font-size:8px; opacity:.7; }
 .page-statistics.compact { grid-template-columns:repeat(3,minmax(0,1fr)); flex:0 1 430px; padding:20px 0; }
 .page-statistics.compact>div { padding-inline:15px; }
@@ -28,15 +28,15 @@
 .history-origin figure { margin:0; }
 .history-origin .club-media { height:370px; border-radius:var(--radius-md); }
 .history-origin figcaption { font-size:10px; color:var(--text); padding-top:12px; text-align:center; }
-.history-origin blockquote { margin:25px 0 15px; border-left:4px solid var(--yellow); background:var(--gray); padding:20px 24px; font-size:15px; font-weight:600; font-style:italic; }
+.history-origin blockquote { margin:25px 0 15px; border-left:4px solid var(--olive); background:var(--gray); padding:20px 24px; font-size:15px; font-weight:600; font-style:italic; }
 .history-timeline { list-style:none; padding:5px 0; margin:0 auto; position:relative; max-width:960px; }
 .history-timeline::before { content:''; position:absolute; width:2px; background:#d8dce9; top:5px; bottom:5px; left:50%; transform:translateX(-50%); }
 .history-timeline li { position:relative; display:grid; grid-template-columns:1fr 1fr; gap:70px; padding-bottom:35px; }
 .history-timeline li:last-child { padding-bottom:0; }
 .timeline-dot { position:absolute; left:50%; top:22px; width:18px; height:18px; transform:translateX(-50%); background:var(--royal); border:4px solid var(--gray); border-radius:50%; box-shadow:0 0 0 1px var(--royal); }
-.history-timeline li:nth-child(even) .timeline-dot { background:var(--yellow); box-shadow:0 0 0 1px var(--yellow); }
+.history-timeline li:nth-child(even) .timeline-dot { background:var(--olive); box-shadow:0 0 0 1px var(--olive); }
 .timeline-card { grid-column:1; background:white; border-radius:var(--radius-md); padding:25px; border-top:3px solid var(--royal); }
-.history-timeline li:nth-child(even) .timeline-card { grid-column:2; border-top-color:var(--yellow); }
+.history-timeline li:nth-child(even) .timeline-card { grid-column:2; border-top-color:var(--olive); }
 .timeline-card .timeline-date { font-family:var(--font-title); color:var(--royal); font-size:21px; margin-bottom:8px; }
 .timeline-card h3 { font-size:15px; margin-bottom:9px; }
 .timeline-card>p:not(.timeline-date) { font-size:12px; color:var(--text); }
@@ -49,15 +49,15 @@
 .history-values { background:var(--navy); color:white; }
 .values-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:24px; }
 .values-grid article { text-align:center; border:1px solid #ffffff26; border-radius:var(--radius-md); padding:30px 20px; }
-.values-grid svg { color:var(--yellow); margin:0 auto 14px; }
+.values-grid svg { color:var(--olive); margin:0 auto 14px; }
 .values-grid h3 { font-family:var(--font-title); text-transform:uppercase; font-size:23px; font-weight:400; margin-bottom:10px; }
 .values-grid p { color:#ffffffb8; font-size:11px; }
 .history-future { display:grid; grid-template-columns:1.3fr 1fr; gap:70px; align-items:center; }
 .future-actions { display:flex; flex-wrap:wrap; align-items:flex-start; gap:12px; margin-top:26px; }
 .unavailable-note { display:block; font-size:9px; color:var(--text); margin-top:6px; text-align:center; }
-.history-club-card { display:flex; flex-direction:column; align-items:center; background:var(--royal); border-bottom:5px solid var(--yellow); border-radius:var(--radius-md); padding:35px 20px; color:white; text-align:center; }
+.history-club-card { display:flex; flex-direction:column; align-items:center; background:var(--royal); border-bottom:5px solid var(--olive); border-radius:var(--radius-md); padding:35px 20px; color:white; text-align:center; }
 .history-club-card h3 { font-family:var(--font-title); font-weight:400; font-size:35px; margin-top:14px; }
-.history-club-card p { font-family:var(--font-arabic); color:var(--yellow); font-size:19px; margin:3px 0 16px; }
+.history-club-card p { font-family:var(--font-arabic); color:white; font-size:19px; margin:3px 0 16px; }
 .history-club-card>span:last-child { font-size:9px; letter-spacing:.6px; }
 .roster-filters { margin-bottom:26px; }
 .roster-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:24px; align-items:start; }
@@ -65,16 +65,16 @@
 .roster-card-top { position:absolute; inset:14px 14px auto; display:flex; align-items:center; justify-content:space-between; z-index:1; }
 .roster-card-top .club-logo { width:36px; height:36px; }
 .roster-card-top .club-logo svg { width:20px; }
-.roster-number { display:grid; place-items:center; width:37px; height:37px; border-radius:50%; color:var(--navy); background:var(--yellow); font-family:var(--font-title); font-size:22px; }
+.roster-number { display:grid; place-items:center; width:37px; height:37px; border-radius:50%; color:var(--olive-dark); background:var(--white); font-family:var(--font-title); font-size:22px; }
 .roster-portrait { height:285px; display:flex; align-items:flex-end; justify-content:center; }
 .roster-portrait>.club-media { width:100%; height:100%; background:var(--royal); }
 .roster-portrait>.club-media img { object-position:top center; }
 .roster-portrait>svg { width:170px; height:215px; stroke-width:1; color:#ffffff29; }
 .roster-info { background:var(--navy); padding:19px 18px; min-height:135px; }
-.roster-position { color:var(--yellow); font-size:9px; text-transform:uppercase; letter-spacing:.7px; }
+.roster-position { color:white; font-size:9px; text-transform:uppercase; letter-spacing:.7px; }
 .roster-info h3 { font-family:var(--font-title); font-weight:400; text-transform:uppercase; font-size:22px; line-height:1.3; margin:7px 0; overflow-wrap:anywhere; }
 .roster-meta { display:flex; flex-wrap:wrap; gap:8px; font-size:10px; }
-.captain-label { color:var(--yellow); }
+.captain-label { color:white; }
 .roster-season { color:#ffffff99; font-size:9px; }
 .roster-info .demo-label { font-size:8px; color:#ffffff99; }
 .roster-statistics { display:flex; justify-content:space-between; gap:8px; border-top:1px solid #ffffff26; margin:15px 0 0; padding-top:12px; flex-wrap:wrap; }
@@ -100,7 +100,7 @@
 .photo-card { background:white; border:1px solid #e4e6ed; border-radius:var(--radius-md); overflow:hidden; }
 .photo-open { display:block; position:relative; width:100%; background:none; border:0; padding:0; }
 .photo-open .club-media { height:245px; }
-.photo-expand { position:absolute; right:12px; bottom:12px; display:grid; place-items:center; border-radius:4px; background:var(--navy); color:var(--yellow); width:32px; height:32px; }
+.photo-expand { position:absolute; right:12px; bottom:12px; display:grid; place-items:center; border-radius:4px; background:var(--navy); color:white; width:32px; height:32px; }
 .photo-caption { padding:20px; }
 .photo-category { font-size:9px; text-transform:uppercase; font-weight:600; color:var(--royal); letter-spacing:.8px; }
 .photo-caption h2 { font-family:var(--font-title); font-weight:400; text-transform:uppercase; font-size:21px; margin:5px 0 8px; }
@@ -108,7 +108,7 @@
 .photo-caption time { display:block; font-size:10px; color:var(--text); margin-bottom:8px; }
 .photo-caption .demo-label { font-size:8px; color:var(--text); margin-top:10px; }
 .gallery-lightbox { border:0; margin:0; padding:20px 25px; max-width:none; max-height:none; width:100%; height:100%; height:100dvh; position:fixed; inset:0; background:var(--navy); color:white; overflow:auto; }
-.gallery-lightbox::backdrop { background:#101a49ed; }
+.gallery-lightbox::backdrop { background:#35450Fed; }
 .gallery-lightbox button { border:1px solid #ffffff40; background:transparent; color:white; border-radius:50%; min-width:44px; min-height:44px; display:grid; place-items:center; }
 .lightbox-toolbar { display:flex; justify-content:space-between; align-items:center; font-size:12px; }
 .lightbox-main { display:grid; grid-template-columns:44px minmax(0,1fr) 44px; align-items:center; gap:20px; max-width:1450px; margin:12px auto 0; }
@@ -119,7 +119,7 @@
 .lightbox-main figcaption { text-align:center; padding:20px 10px 5px; }
 .lightbox-main h2 { font-family:var(--font-title); font-size:25px; font-weight:400; }
 .lightbox-main figcaption p,.lightbox-main time { font-size:11px; color:#ffffffb8; }
-.lightbox-main .demo-label { color:var(--yellow); font-size:9px; }
+.lightbox-main .demo-label { color:white; font-size:9px; }
 @media(max-width:1000px) {
   .inner-hero-layout { gap:25px; }
   .page-statistics.compact { flex-basis:330px; }

@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import type { CSSProperties } from 'react';
 import { headers } from 'next/headers';
 import './globals.css';
@@ -18,7 +18,7 @@ export async function generateMetadata():Promise<Metadata>{
 export default async function RootLayout({children}:Readonly<{children:React.ReactNode}>){
  if((await headers()).get('x-ajt-admin')==='1')return <html lang="fr"><body>{children}</body></html>;
  const [s,navigation,locale]=await Promise.all([getPublicSettings(),getPublicNavigation(),getLocale()]);
- const style={'--royal':s.primary_color,'--navy':s.secondary_color,'--yellow':s.accent_color,'--white':s.background_color,'--font-title':`'${s.heading_font}',sans-serif`,'--font-body':`'${s.body_font}',sans-serif`} as CSSProperties;
+ const style={'--royal':'#4E6316','--navy':'#35450F','--olive':'#4E6316','--white':'#FFFFFF','--font-title':`'${s.heading_font}',sans-serif`,'--font-body':`'${s.body_font}',sans-serif`} as CSSProperties;
  const footer={clubName:s.club_name,logoUrl:s.footer_logo_url??s.logo_url,footerSettings:{arabicName:s.club_name_ar,slogan:locale==='ar'?s.slogan_ar:s.slogan,copyright:s.footer_text??''},contactInfo:{socials:[['Facebook',s.facebook_url],['Instagram',s.instagram_url],['YouTube',s.youtube_url],['TikTok',s.tiktok_url]].filter(([,url])=>url).map(([label,url])=>({label:label!,url:url!}))}};
  return <html lang={locale} dir={locale==='ar'?'rtl':'ltr'}><head><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous"/></head><body style={style}><LocaleProvider locale={locale}><a className="skip-link" href="#main-content">{locale==='ar'?'انتقل إلى المحتوى':'Aller au contenu'}</a><Header logoUrl={s.header_logo_url??s.logo_url} clubName={locale==='ar'?s.club_name_ar:s.club_name} items={navigation}/>{children}<Footer content={footer} items={navigation}/></LocaleProvider></body></html>;
 }

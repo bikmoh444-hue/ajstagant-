@@ -11,12 +11,12 @@
 .dedicated-contact-form h2 { font-family:var(--font-title); font-weight:400; font-size:26px; margin-bottom:8px; }
 .dedicated-contact-form fieldset { border:0; padding:0; margin:0; min-width:0; }
 .dedicated-contact-form label>span { font-weight:400; color:var(--text); }
-.dedicated-contact-form .contact-service-note { font-size:10px; color:var(--text); border-left:3px solid var(--yellow); padding:9px 12px; background:white; margin-bottom:22px; }
+.dedicated-contact-form .contact-service-note { font-size:10px; color:var(--text); border-left:3px solid var(--olive); padding:9px 12px; background:white; margin-bottom:22px; }
 .dedicated-contact-form input[aria-invalid=true],.dedicated-contact-form textarea[aria-invalid=true] { border-color:var(--royal); border-width:2px; }
 .dedicated-contact-form .contact-field-error { color:var(--royal); font-size:10px; margin:-6px 0 14px; font-weight:500; }
 .contact-feedback { display:flex; align-items:flex-start; gap:10px; margin-top:20px; padding:14px; border:1px solid var(--royal); border-radius:var(--radius-sm); color:var(--navy); background:white; font-size:12px; }
 .contact-feedback svg { flex-shrink:0; color:var(--royal); }
-.contact-feedback.success { border-color:var(--yellow); border-left:4px solid var(--yellow); }
+.contact-feedback.success { border-color:var(--olive); border-left:4px solid var(--olive); }
 .contact-feedback.error { border-left:4px solid var(--royal); }
 .contact-spinner { animation:contact-spin 1s linear infinite; }
 @keyframes contact-spin { to { transform:rotate(360deg); } }

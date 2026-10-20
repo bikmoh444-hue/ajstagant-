@@ -39,6 +39,6 @@ export function DraftPreview({table,values,site}:{table:string;values:Record<str
   const image=values.photo_url??values.image_url??values.logo_url;
   preview=<article>{typeof image==='string'&&image&&<ClubMedia media={{src:image,alt:String(values.full_name??values.title_fr??'Aperçu')}}/>}<h2>{String(values.full_name??values.title_fr??values.name??'')}</h2><dl>{Object.entries(values).filter(([key,value])=>value!=null&&typeof value!=='object'&&!/(photo|image|logo)_url$/.test(key)).map(([key,value])=><div key={key}><dt>{key.replaceAll('_',' ')}</dt><dd>{typeof value==='boolean'?(value?'Oui':'Non'):String(value)}</dd></div>)}</dl></article>;
  }
- const style={'--royal':s?.primary_color,'--navy':s?.secondary_color,'--yellow':s?.accent_color,'--white':s?.background_color} as CSSProperties;
+ const style={'--royal':'#4E6316','--navy':'#35450F','--olive':'#4E6316','--white':'#FFFFFF'} as CSSProperties;
  return <section className="admin-draft-preview" aria-label="Aperçu avant enregistrement"><h3>Aperçu avant enregistrement</h3><p>Le contenu affiché ici n’est pas publié. Les listes liées se gèrent dans leurs rubriques.</p><div><button type="button" aria-pressed={locale==='fr'} onClick={()=>setLocale('fr')}>Français</button><button type="button" aria-pressed={locale==='ar'} onClick={()=>setLocale('ar')}>العربية</button></div><LocaleProvider locale={locale}><div className="admin-draft-canvas" style={style} dir={locale==='ar'?'rtl':'ltr'} inert>{preview??<p>Aucun aperçu disponible pour ce contenu.</p>}</div></LocaleProvider></section>;
 }

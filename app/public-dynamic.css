@@ -2,10 +2,10 @@
 .languages button[aria-pressed=true]{opacity:1}
 .history-mark>.club-media{width:100%;min-height:150px;border-radius:var(--radius-sm)}
 [dir=rtl] .hero-arabic,[dir=rtl] .inner-hero-arabic{text-align:right}
-[dir=rtl] .hero-overlay{background:linear-gradient(270deg,#101a49f2,#101a4933)}
+[dir=rtl] .hero-overlay{background:linear-gradient(270deg,#35450Ff2,#35450F33)}
 [dir=rtl] .navigation{margin-left:0;margin-right:auto}
 [dir=rtl] .history-mark{border-right:0;border-left:1px solid #eee;padding-left:25px;padding-right:0}
-[dir=rtl] .history-origin blockquote{border-left:0;border-right:4px solid var(--yellow)}
+[dir=rtl] .history-origin blockquote{border-left:0;border-right:4px solid var(--olive)}
 [dir=rtl] h1,[dir=rtl] h2,[dir=rtl] h3{font-family:var(--font-arabic)}
 html[dir=rtl] body{font-family:var(--font-arabic)}
 [dir=rtl] .brand>span:last-child{font-family:var(--font-arabic);white-space:normal;max-width:220px;font-size:15px;line-height:1.35}

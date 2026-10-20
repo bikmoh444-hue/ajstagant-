@@ -1,11 +1,11 @@
 .history-vision-mission{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:40px}
-.history-vision-mission article{border-inline-start:4px solid var(--yellow);padding-inline-start:24px}
+.history-vision-mission article{border-inline-start:4px solid var(--olive);padding-inline-start:24px}
 .history-page .inner-hero h1{overflow-wrap:anywhere}
 .history-page{text-align:start}
 .history-page .history-origin{align-items:start}
 .history-page .history-origin .body-copy{font-size:15px;line-height:1.95;margin-bottom:20px;max-width:68ch}
 .history-page[dir=rtl] .history-origin .body-copy{font-family:var(--font-arabic);font-size:17px;line-height:2.1}
-.history-page .inner-hero-subtitle{color:var(--yellow);line-height:1.7}
+.history-page .inner-hero-subtitle{color:white;line-height:1.7}
 .history-page .inner-hero-description{font-size:14px;line-height:1.95}
 .history-page .history-origin figure{padding-top:6px}
 @media(max-width:640px){.history-page .history-origin .body-copy{font-size:14px}.history-page[dir=rtl] .history-origin .body-copy{font-size:16px}}
